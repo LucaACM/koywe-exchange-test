@@ -60,3 +60,4 @@ JWT_EXPIRES_IN=7d
 
 - Agilizar la parte de authenticacion con JWT, con explicaciones mas que generacion de codigo
 - Creacion de este Readme
+- Creacion de test de servicios utilizando codex de openAI
