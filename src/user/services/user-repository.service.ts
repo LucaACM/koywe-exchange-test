@@ -1,10 +1,6 @@
 import { User } from '../model/user.model';
 import { InjectModel } from '@nestjs/mongoose';
-import {
-  FilterQuery,
-  Model,
-  PopulateOptions,
-} from 'mongoose';
+import { FilterQuery, Model, PopulateOptions } from 'mongoose';
 import { Injectable } from '@nestjs/common';
 import { BaseDatabaseService } from 'src/common/shared/infraestructure/database/abstract-database.service';
 
@@ -16,7 +12,7 @@ export class UserRepositoryService extends BaseDatabaseService<User> {
   ) {
     super(userModel);
   }
-  
+
   buildQuery(query: Partial<User>): FilterQuery<User> {
     const filter: FilterQuery<User> = {};
     if (query.username) {
